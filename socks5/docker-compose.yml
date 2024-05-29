@@ -1,0 +1,12 @@
+services:
+  socks5:
+    image: serjs/go-socks5-proxy
+    container_name: socks5proxy
+    environment:
+      - TZ=Europe/Moscow
+      - PROXY_USER=brusovav
+      - PROXY_PASSWORD=buratin0.byl.tupoy.jak.drova
+    ports:
+      - '5390:1080'
+    restart: unless-stopped
+ 
